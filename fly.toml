@@ -1,17 +1,18 @@
-# fly.toml app configuration file generated for authentiq-pdf-service
+# fly.toml app configuration file generated for microservices-rust-pdf on 2026-05-24T04:02:45Z
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
+#
 
-app = 'authentiq-pdf-service'
-primary_region = 'cdg'
+app = 'microservices-rust-pdf'
+primary_region = 'fra'
 
 [build]
   dockerfile = 'Dockerfile'
 
 [env]
-  PDF_MAX_UPLOAD_MB = '50'
-  PDF_MAX_PAGES = '100'
   PDF_DEFAULT_DPI = '150'
+  PDF_MAX_PAGES = '100'
+  PDF_MAX_UPLOAD_MB = '50'
   RUST_LOG = 'authentiq_pdf_service=info'
 
 [http_service]
@@ -33,3 +34,4 @@ primary_region = 'cdg'
   memory = '1gb'
   cpu_kind = 'shared'
   cpus = 1
+  memory_mb = 1024
