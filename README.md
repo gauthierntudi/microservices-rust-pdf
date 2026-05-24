@@ -54,7 +54,7 @@ X-Api-Key: votre-clé-secrete
 
 ## Développement local
 
-Prérequis : Rust 1.83+, Poppler (`brew install poppler` sur macOS).
+Prérequis : Rust **1.85+**, Poppler (`brew install poppler` sur macOS).
 
 ```bash
 export PDF_SERVICE_API_KEY=dev-secret
